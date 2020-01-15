@@ -29,11 +29,10 @@ public class MainActivity extends AppCompatActivity {
 
         mispinner.setOnItemSelectedListener(new AdapterView.OnItemSelectedListener() {
                     @Override
-                    public void onItemSelected(AdapterView<?> adapterView,
-                                               View view, int i, long arg3) {
+                    public void onItemSelected(AdapterView<?> adapterView,View view, int position, long arg3) {
 // TODO Auto-generated method stub
                         Fragment FragmentoSeleccionado = null;
-                        switch (i){
+                        switch (position){
                             case 0:
                                 FragmentoSeleccionado= new ListaFragmento();
                                 break;
@@ -46,7 +45,7 @@ public class MainActivity extends AppCompatActivity {
                         transaction.commit();
                     }
                     @Override
-                    public void onNothingSelected(AdapterView<?> arg0) {
+                    public void onNothingSelected(AdapterView<?> adapterView) {
 // TODO Auto-generated method stub
                     }
                 });
@@ -54,4 +53,12 @@ public class MainActivity extends AppCompatActivity {
     }
 
 
+    public void ejemplo3(View view) {
+    }
+
+    public void ejemplo2(View view) {
+    }
+
+    public void ejemplo1(View view) {
+    }
 }
