@@ -1,4 +1,4 @@
-package com.example.u1tema3android.Ejemplo2;
+package com.example.u1tema3android.Ejemplo3;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;

@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
 
+import com.example.u1tema3android.Correo;
 import com.example.u1tema3android.R;
 
 public class ListaCorreo extends AppCompatActivity {

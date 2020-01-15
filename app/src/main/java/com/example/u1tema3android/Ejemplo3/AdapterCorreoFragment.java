@@ -1,4 +1,4 @@
-package com.example.u1tema3android.Ejemplo2;
+package com.example.u1tema3android.Ejemplo3;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,6 +11,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.u1tema3android.Correo;
+import com.example.u1tema3android.Ejemplo2.DetalleCorreo;
 import com.example.u1tema3android.R;
 
 public class AdapterCorreoFragment extends RecyclerView.Adapter<AdapterCorreoFragment.ViewHolder> {
@@ -22,12 +24,12 @@ public class AdapterCorreoFragment extends RecyclerView.Adapter<AdapterCorreoFra
                 .getSystemService(Context.LAYOUT_INFLATER_SERVICE);
     }
     @Override
-    public AdapterCorreoFragment.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
+    public ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         View v = inflador.inflate(R.layout.list_item_correo, parent, false);
-        return new AdapterCorreoFragment.ViewHolder(v);
+        return new ViewHolder(v);
     }
     @Override
-    public void onBindViewHolder(AdapterCorreoFragment.ViewHolder holder, final int i) {
+    public void onBindViewHolder(ViewHolder holder, final int i) {
         holder.titulo.setText(datos[i].getDe());
         holder.subtitutlo.setText(datos[i].getAsunto());
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -44,7 +46,7 @@ public class AdapterCorreoFragment extends RecyclerView.Adapter<AdapterCorreoFra
                 Log.i("test1","clic:"+datos[i].getDe());
                 Log.i("test1","valor:"+hayDetalle);
                 if (hayDetalle) {
-                    ((MainFragmentCorreo) micontext).mostrarDetalle(datos[i].getTexto());
+                    ((MainFragmentCorreo) micontext).mostrarDetalle(datos[i].getTexto()+" ,"+datos[i].getAsunto()+" ,"+datos[i].getDe());
                 } else {
                     micontext.startActivity(intent);
                 }

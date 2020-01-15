@@ -9,6 +9,7 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.example.u1tema3android.Correo;
 import com.example.u1tema3android.R;
 
 public class AdapterCorreo extends RecyclerView.Adapter<AdapterCorreo.ViewHolder> {

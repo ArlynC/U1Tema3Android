@@ -4,12 +4,12 @@
     android:orientation="horizontal"
     android:layout_width="match_parent"
     android:layout_height="match_parent">
-    <fragment class="com.example.u1tema3android.Ejemplo2.ListaCorreoFragment"
+    <fragment class="com.example.u1tema3android.Ejemplo3.ListaCorreoFragment"
         android:id="@+id/FrgListado"
         android:layout_weight="30"
         android:layout_width="0px"
         android:layout_height="match_parent" />
-    <fragment class="com.example.u1tema3android.Ejemplo2.DetalleCorreoFragment"
+    <fragment class="com.example.u1tema3android.Ejemplo3.DetalleCorreoFragment"
         android:id="@+id/FrgDetalle"
         android:layout_weight="70"
         android:layout_width="0px"
